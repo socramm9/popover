@@ -72,7 +72,10 @@ class _PopoverItemState extends State<PopoverItem> {
                 child: child,
               );
             },
-            child: Material(child: widget.child),
+            child: Material(
+              color: widget.backgroundColor,
+              child: widget.child,
+            ),
           ),
         )
       ],
